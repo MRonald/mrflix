@@ -12,9 +12,9 @@ function App() {
       <Menu />
 
       <BannerMain 
-      videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-      videoDescription={"Desenvolvendo e aprendendo React na prática! Seja bem-vindo a ViniFlix, conteúdos diversos para seu gosto em tecnologia, game, e esportes!"}
-      url={dadosIniciais.categorias[0].videos[0].url}/>
+      videoTitle={dadosIniciais.categorias[0].destaque.titulo}
+      videoDescription={"O início de tudo! Curso de Algoritmo completo e grátis do Curso em Vídeo. Aprenda com o Gustavo Guanabara a base para a sua vida na programação."}
+      url={dadosIniciais.categorias[0].destaque.url}/>
       
       <Carousel
       ignoreFirstVideo
@@ -29,7 +29,13 @@ function App() {
       <Carousel
       category={dadosIniciais.categorias[3]}
       />
-      
+      <Carousel
+      category={dadosIniciais.categorias[4]}
+      />
+      <Carousel
+      category={dadosIniciais.categorias[5]}
+      />
+
       <Footer/>
     </div>
   );
